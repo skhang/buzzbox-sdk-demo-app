@@ -32,7 +32,7 @@
         </receiver>
         <receiver android:name="com.buzzbox.mob.android.scheduler.AlarmReceiver"/>
         <service android:name="com.buzzbox.mob.android.scheduler.ScheduledService"/>
-        <meta-data android:name="Scheduler.Analytics.apiKey" android:value="debug-api-key"/>
+          <meta-data android:name="Scheduler.Analytics.apiKey" android:value="debug-api-key"/> <!-- sing up and get your apiKey at http://hub.buzzbox.com -->
         <activity android:name="com.buzzbox.demo.HelloWorldActivity"/>
     </application>
 </manifest>
