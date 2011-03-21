@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	
+	<RelativeLayout android:layout_width="fill_parent" android:layout_height="50dip">
+		<EditText android:id="@+id/notification_keywords_edit_add_text"
+			android:hint="Add Notification Keyword" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:layout_marginTop="3dip"
+			android:layout_marginBottom="0dip"
+			android:layout_marginLeft="3dip"
+			android:layout_marginRight="50dip"
+			/>
+	
+		<Button android:id="@+id/notification_keywords_edit_button" 
+			android:layout_marginTop="3dip"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" android:text="Add"
+			android:layout_alignParentRight="true"/>			
+	</RelativeLayout>	
+	<ListView 
+		android:id="@+id/notification_keywords_edit_list" 
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:focusable="false"
+		android:cacheColorHint="#00000000" 
+		/>			
+
+</LinearLayout>

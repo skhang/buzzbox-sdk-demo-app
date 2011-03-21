@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<item android:id="@+id/menu_rss_url" android:title="Set RSS"
+		android:icon="@android:drawable/ic_menu_preferences"/>
+	
+	<item android:id="@+id/menu_main_log" android:title="Notifications Log"
+		android:icon="@android:drawable/ic_menu_agenda"/>
+	
+	<item android:id="@+id/menu_main_scheduler" android:title="Notifications"
+		android:icon="@android:drawable/ic_menu_preferences" />
+		
+	
+		
+</menu>

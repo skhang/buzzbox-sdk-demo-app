@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">BB SDK will make your life easy!</string>
+    <string name="app_name">BuzzBox SDK</string>
+    <string name="sdk_description">
+    	The BuzzBox SDK enables you to easily add a scheduler to your App. 
+    	With few lines of code you can add a background task and app-side notifications. 
+    	Besides, BuzzBox SDK also include free realtime analytics, 
+    	so you can monitor in real time how many user are installing and using your App.
+    </string>
+    <string name="app_description">
+    	This is a very simple open source app that uses 3 parts of the BuzzBox SDK:\n\n
+    	- Integrated Rss Parser\n
+    	- Notifications Settings\n
+    	- Notifications Log\n\n
+    	Start selecting a Rss feed!
+    </string>
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:layout_gravity="center"
+	android:background="#ffffffff">
+
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+	    
+		<ImageView android:src="@drawable/buzzbox_logo_gray"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dip" 
+			android:layout_marginLeft="20dip"
+			android:layout_centerHorizontal="true" />
+				   
+		<TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:gravity="center_horizontal"
+		    android:layout_marginLeft="10dip"
+		    
+		    android:text="Android Notifications and Analytics"
+		    android:textSize="14sp"
+		    android:textStyle="bold"
+		    android:textColor="#ffB2B2B2"
+		    />
+		    
+		<TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:layout_margin="10dip"
+		    
+		    android:text="@string/app_description"
+		    android:textSize="12sp"
+		    android:textStyle="bold"
+		    android:textColor="#99000000"
+		    />
+		
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:background="#ffffffff"
+		    android:gravity="center_horizontal"
+		    android:layout_marginTop="20dip">
+		    	
+		    	
+		    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    		android:orientation="vertical"
+		    		android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:background="#ffffffff"
+		    		android:gravity="center_horizontal"
+		    		android:layout_gravity="center_horizontal">
+		    		
+			    	<ImageButton android:id="@+id/main_rss_url"
+			    		android:src="@drawable/dashboard_mytopstories_orange_small" 
+						android:layout_width="wrap_content" android:layout_height="wrap_content" />
+					
+					<TextView  
+					    android:layout_width="wrap_content" 
+					    android:layout_height="wrap_content"
+					    android:layout_margin="10dip"
+					    
+					    android:text="Select Rss"
+					    android:textSize="12sp"
+					    android:textStyle="bold"
+					    android:textColor="#99000000"
+					    />
+				</LinearLayout>
+		    	
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    		android:orientation="vertical"
+		    		android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:background="#ffffffff"
+		    		android:gravity="center_horizontal"
+		    		android:layout_gravity="center_horizontal">
+		    		
+			    	<ImageButton android:id="@+id/main_scheduler"
+			    		android:src="@drawable/dashboard_personalize_orange_small"  
+						android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				
+					
+					<TextView  
+					    android:layout_width="wrap_content" 
+					    android:layout_height="wrap_content"
+					    android:layout_margin="10dip"
+					    
+					    android:text="Settings"
+					    android:textSize="12sp"
+					    android:textStyle="bold"
+					    android:textColor="#99000000"
+					    />
+				</LinearLayout>
+				
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    		android:orientation="vertical"
+		    		android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:background="#ffffffff"
+		    		android:gravity="center_horizontal"
+		    		android:layout_gravity="center_horizontal">
+		    		
+			    	<ImageButton android:id="@+id/main_log"
+			    		android:src="@drawable/dashboard_bytime_orange_small"  
+						android:layout_width="wrap_content" android:layout_height="wrap_content" />
+					
+					<TextView  
+					    android:layout_width="wrap_content" 
+					    android:layout_height="wrap_content"
+					    android:layout_margin="10dip"
+					    
+					    android:text="Notif. Log"
+					    android:textSize="12sp"
+					    android:textStyle="bold"
+					    android:textColor="#99000000"
+					    />
+				</LinearLayout>
+		    	
+		</LinearLayout>
+		
+		<TextView 
+			android:id="@+id/main_rss_msg" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:layout_margin="10dip"
+		    
+		    android:textSize="12sp"
+		    android:textColor="#ffFF0000"
+		    />
+		
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:background="#FFFFFFDD"
+    		android:gravity="center_horizontal"
+    		android:layout_gravity="center_horizontal"
+    		android:layout_margin="10dip">
+			
+			<TextView  
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:layout_margin="10dip"
+			    
+			    android:text="@string/sdk_description"
+			    android:textSize="12sp"
+			    android:textStyle="bold"
+			    android:textColor="#99000000"
+			    />
+			
+			<Button android:id="@+id/main_read_more"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:text="Read More..."
+				android:background="@null" 
+				android:layout_margin="10dip"
+			    
+			    android:textSize="12sp"
+			    android:textStyle="bold"
+			    android:textColor="#99000000"
+				/>
+		</LinearLayout>
+	</LinearLayout>
+
+</ScrollView>

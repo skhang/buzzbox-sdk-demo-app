@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+		
+	<Button android:id="@+id/topics_context_search"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"		
+		android:text="Search for"
+		android:paddingLeft="12dip"
+		android:paddingRight="12dip"
+		android:paddingTop="18dip"
+		android:paddingBottom="18dip"/>
+		
+	<Button	android:id="@+id/topics_context_notification"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"		 
+		android:text="Save as Notification"
+		android:paddingLeft="12dip"
+		android:paddingRight="12dip"
+		android:paddingTop="18dip"
+		android:paddingBottom="18dip" />
+	
+</LinearLayout>

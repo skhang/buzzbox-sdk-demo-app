@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	    android:id="@+id/story_details_toolbar"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+		android:background="#bb3333FF"
+		android:gravity="center_horizontal"	
+	    android:layout_gravity="center_horizontal">
+	
+		<LinearLayout android:id="@+id/toolbar_notification"
+	    	android:orientation="vertical"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:background="@android:drawable/list_selector_background" 
+	    	android:gravity="center_horizontal"
+	    	android:layout_gravity="center_horizontal"
+	    	android:visibility="gone">
+					
+				<ImageView
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:src="@drawable/toolbar_notification"
+					android:scaleType="center"
+					android:paddingTop="3dip"
+					android:paddingLeft="0dip"
+					android:paddingRight="0dip"
+					android:paddingBottom="0dip" />
+					
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Notif. Settings"
+					android:textSize="10dip"
+					android:textColor="#ffffffff"
+					android:paddingLeft="5dip"
+					android:paddingRight="5dip"
+					android:layout_gravity="center_horizontal"
+					/>
+		</LinearLayout>	
+		
+		<LinearLayout android:id="@+id/toolbar_filter"
+	    	android:orientation="vertical"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:background="@android:drawable/list_selector_background"
+	    	android:gravity="center_horizontal"
+	    	android:layout_gravity="center_horizontal">
+	    	
+	    	<ImageView 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:src="@drawable/toolbar_filter"
+				android:layout_weight="1" android:scaleType="center"
+				android:paddingTop="3dip"
+				android:paddingLeft="0dip"
+				android:paddingRight="0dip"
+				android:paddingBottom="0dip" />
+	    	
+	    	<TextView android:id="@+id/toolbar_2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Notif. Filter"
+				android:textSize="10dip"
+				android:textColor="#ffffffff"
+				android:paddingLeft="5dip"
+				android:paddingRight="5dip"
+				android:layout_gravity="center_horizontal"/>
+	    	
+	    </LinearLayout>
+	    
+	    <LinearLayout android:id="@+id/toolbar_share_email"
+	    	android:orientation="vertical"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:background="@android:drawable/list_selector_background"
+	    	android:gravity="center_horizontal"
+	    	android:layout_gravity="center_horizontal">
+	    	
+	    	<ImageView 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:src="@drawable/icon_mail"
+				android:layout_weight="1" android:scaleType="center"
+				android:paddingTop="3dip"
+				android:paddingLeft="0dip"
+				android:paddingRight="0dip"
+				android:paddingBottom="0dip" />
+	    	
+	    	<TextView android:id="@+id/toolbar_3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Send by email"
+				android:textSize="10dip"
+				android:textColor="#ffffffff"
+				android:paddingLeft="5dip"
+				android:paddingRight="5dip"
+				android:layout_gravity="center_horizontal"/>
+	    	
+	    </LinearLayout>
+	    
+		<LinearLayout android:id="@+id/toolbar_share_sms"
+	    	android:orientation="vertical"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:background="@android:drawable/list_selector_background"
+	    	android:gravity="center_horizontal"
+	    	android:layout_gravity="center_horizontal">	
+			
+			<ImageView 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:src="@drawable/icon_sms"
+				android:layout_weight="1" android:scaleType="center"
+				android:paddingTop="3dip"
+				android:paddingLeft="0dip"
+				android:paddingRight="0dip"
+				android:paddingBottom="0dip" />
+			
+			<TextView android:id="@+id/toolbar_4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Send by sms"
+				android:textSize="10dip"
+				android:textColor="#ffffffff"
+				android:paddingLeft="5dip"
+				android:paddingRight="5dip"
+				android:layout_gravity="center_horizontal"/>
+				
+		</LinearLayout>		
+		
+		<LinearLayout android:id="@+id/toolbar_not_log"
+	    	android:orientation="vertical"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:background="@android:drawable/list_selector_background" 
+	    	android:gravity="center_horizontal"
+	    	android:layout_gravity="center_horizontal">
+					
+				<ImageView
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:src="@drawable/toolbar_log"
+					android:scaleType="center"
+					android:paddingTop="3dip"
+					android:paddingLeft="0dip"
+					android:paddingRight="0dip"
+					android:paddingBottom="0dip" />
+					
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Log"
+					android:textSize="10dip"
+					android:textColor="#ffffffff"
+					android:paddingLeft="5dip"
+					android:paddingRight="5dip"
+					android:layout_gravity="center_horizontal"
+					/>
+		</LinearLayout>	
+			
+	</LinearLayout>

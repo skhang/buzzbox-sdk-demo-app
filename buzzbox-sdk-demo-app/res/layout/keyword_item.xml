@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:id="@+id/keyword_container">
+     <CheckBox android:id="@+id/keyword_checkbox"
+     	android:layout_width="wrap_content" android:layout_height="wrap_content"
+     	android:layout_marginRight="6dip"
+     	android:layout_alignParentLeft="true"/>
+   	
+   	<TextView    	
+        android:id="@+id/keyword_text" android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/keyword_checkbox"
+        android:layout_marginBottom="5dp" 
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="18dip"
+        android:padding="6dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:gravity="left|center_vertical" android:minHeight="45dp"
+        android:textSize="22dip"
+        android:text="My Keyword"
+        android:textColor="#eeeeee"/>         
+     
+     <ImageButton android:id="@+id/keyword_remove"        
+     	android:layout_toLeftOf="@+id/keyword_text"
+     	android:layout_width="wrap_content" android:layout_height="wrap_content"
+     	android:src="@android:drawable/ic_delete"        
+     	android:background="@drawable/button_transparent_overlay"
+     	android:layout_alignParentRight="true"	
+     	/>     	
+</RelativeLayout>
