@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    
+    <string name="scheduler_preference_activity.enabled.title">Enabled</string>
+    <string name="scheduler_preference_activity.enabled.summary">Uncheck to disable</string>
+    
+    <string name="scheduler_preference_activity.daysOfWeek.title">Days of the week</string>
+    <string name="scheduler_preference_activity.daysOfWeek.summary.everyDay">every day</string>
+    <string name="scheduler_preference_activity.daysOfWeek.summary.never">never</string>
+        
+    <string name="scheduler_preference_activity.frequency.title">Frequency</string>
+    <string name="scheduler_preference_activity.frequency">Every 5 Minutes":5m;Every 10 Minutes:10m;Every 15 Minutes:15m;Every 30 Minutes:30m;Every Hour:1h;Every 2 Hours:2h;Every 3 Hours:3h;Every 4 Hours:4h</string>
+    <string name="scheduler_preference_activity.frequency.summary.atSpecificTime">At Specific Times</string> 
+    <string name="scheduler_preference_activity.frequency.summary.selectAtWhatTimes">Select At what Times</string>
+    <string name="scheduler_preference_activity.frequency.summary.every">Every</string>
+    <string name="scheduler_preference_activity.frequency.summary.hours">Hours</string>
+    <string name="scheduler_preference_activity.frequency.summary.minutes">Minutes</string>
+        
+    <string name="scheduler_preference_activity.atThisTime.title">At This Times</string>
+    <string name="scheduler_preference_activity.atThisTime.summary">Run 1,2,3.. times a day. Choose Frequency > Select Times to enable </string>
+    <string name="scheduler_preference_activity.atThisTime.summary.clickToSelectWhatTime">Click to select what time</string>
+    <string name="scheduler_preference_activity.atThisTime.summary.clickToAddLongClickToReset">click to add, long click to reset</string>
+    
+    <string name="scheduler_preference_activity.enabledFrom.title">Enabled From...</string>
+    <string name="scheduler_preference_activity.enabledFrom.summary">From</string>
+    
+    <string name="scheduler_preference_activity.enabledTo.title">Enabled To...</string>
+    <string name="scheduler_preference_activity.enabledTo.summary">To</string>
+    
+    <string name="scheduler_preference_activity.notification_type.enabled.title">Status bar Notification</string>
+    <string name="scheduler_preference_activity.notification_type.enabled.summary">Enable notifications in the status bar when new notification arrives</string>
+    
+    <string name="scheduler_preference_activity.sound.title">Sound</string>
+    <string name="scheduler_preference_activity.sound.summary">Also play sound when notification arrives</string>
+    
+    <string name="scheduler_preference_activity.vibrate.title">Vibrate</string>
+    <string name="scheduler_preference_activity.vibrate.summary">Also vibrate when notification arrives</string>
+    
+    <string name="scheduler_preference_activity.led.title">Led</string>
+    <string name="scheduler_preference_activity.led.summary">Also blink when notification arrives</string>
+</resources>
