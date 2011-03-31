@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout     xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/notification_container"
+	android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#33ffff00">
+<ImageView 
+	android:id="@+id/notification_flag"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:src="@drawable/tag_red"
+	android:layout_gravity="top|right"
+	android:layout_marginRight="3dip"
+	android:layout_alignParentTop="true"
+	android:layout_alignParentRight="true"
+	/>
+<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="7dp"
+        android:paddingLeft="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        >
+        <!--com.android.server.status.AnimatedImageView android:id="@+id/icon" -->
+        <ImageView android:id="@+id/icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitCenter"
+            />
+        <TextView android:id="@+id/title"
+           android:textAppearance="@android:style/TextAppearance.Medium.Inverse"
+           android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:paddingLeft="4dp"
+            android:text="Title"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView android:id="@+id/text"
+        	android:textAppearance="@android:style/TextAppearance.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:paddingLeft="4dp"
+            android:text="Second line"
+            />
+<!-- 
+        <com.buzzbox.demo.helloworld.DateTimeView android:id="@+id/time2"           
+       		android:textAppearance="@android:style/TextAppearance.Small"
+            android:layout_marginLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:paddingRight="5dp"   
+             android:text="3:00PM"         
+            />
+-->
+        <TextView android:id="@+id/time"
+        	android:textAppearance="@android:style/TextAppearance.Small.Inverse"
+            android:layout_marginLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:paddingRight="5dp"   
+            android:text="3:00PM"   
+            />
+                        
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
