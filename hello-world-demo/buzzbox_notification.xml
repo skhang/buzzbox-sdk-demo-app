@@ -7,8 +7,7 @@
 <ImageView 
 	android:id="@+id/notification_flag"
 	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:src="@drawable/tag_red"
+	android:layout_height="wrap_content"	
 	android:layout_gravity="top|right"
 	android:layout_marginRight="3dip"
 	android:layout_alignParentTop="true"
@@ -25,9 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingTop="3dp"
-        >
-        <!--com.android.server.status.AnimatedImageView android:id="@+id/icon" -->
+        android:paddingTop="3dp">
         <ImageView android:id="@+id/icon"
             android:layout_width="25dp"
             android:layout_height="25dp"
@@ -62,17 +59,6 @@
             android:paddingLeft="4dp"
             android:text="Second line"
             />
-<!-- 
-        <com.buzzbox.demo.helloworld.DateTimeView android:id="@+id/time2"           
-       		android:textAppearance="@android:style/TextAppearance.Small"
-            android:layout_marginLeft="4dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:singleLine="true"
-            android:paddingRight="5dp"   
-             android:text="3:00PM"         
-            />
--->
         <TextView android:id="@+id/time"
         	android:textAppearance="@android:style/TextAppearance.Small.Inverse"
             android:layout_marginLeft="4dp"
