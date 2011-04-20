@@ -23,7 +23,7 @@ public class HelloWorldActivity extends Activity {
 		      SchedulerManager.getInstance().restart(this, HelloWorldTask.class);
 		} else if (openAppStatus==AnalyticsManager.OPEN_APP_UPGRADE){
 		     // restart on upgrade
-		    SchedulerManager.getInstance().restartAll(this, 0);    
+		    SchedulerManager.getInstance().restartAll(this);    
 		}
 	}
 }

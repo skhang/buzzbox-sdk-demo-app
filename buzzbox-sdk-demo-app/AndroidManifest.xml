@@ -28,19 +28,15 @@
         <!-- End BuzzBox SDK activities -->
         
         <!-- BuzzBox SDK receivers -->
-	        <receiver android:name="com.buzzbox.mob.android.scheduler.BootReceiverSchedulerManager">
-	            <intent-filter>
-	                <action android:name="android.intent.action.BOOT_COMPLETED"/>
-	            </intent-filter>
-	        </receiver>
-	        <receiver android:name="com.buzzbox.mob.android.scheduler.TimeChangeReceiver">
-	            <intent-filter>
+	        <receiver android:name="com.buzzbox.mob.android.scheduler.SchedulerReceiver">
+	                <intent-filter>
+	                        <action android:name="android.intent.action.BOOT_COMPLETED"/>
 	                <action android:name="android.intent.action.TIME_SET"/>
 	                <action android:name="android.intent.action.DATE_CHANGED"/>
 	                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
 	            </intent-filter>
 	        </receiver>
-	        <receiver android:name="com.buzzbox.mob.android.scheduler.AlarmReceiver"/>
+
 	        <service android:name="com.buzzbox.mob.android.scheduler.ScheduledService"/>
 		<!-- End BuzzBox SDK receivers -->
 		    

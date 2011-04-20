@@ -119,11 +119,11 @@ public class BrowserActivity extends Activity {
         int openAppStatus = AnalyticsManager.onOpenApp(this);
         if (openAppStatus==AnalyticsManager.OPEN_APP_FIRST_TIME) { // very first time
         	UIHelper.openFirstTimePopup(this);
-        	SchedulerManager.getInstance().saveTask(this, "*/10 9-20 * * 1,2,3,4,5", MyRssReaderTask.class);
+        	SchedulerManager.getInstance().saveTask(this, "*/30 9-20 * * 1,2,3,4,5", MyRssReaderTask.class);
             SchedulerManager.getInstance().restart(this, MyRssReaderTask.class);
         } else if (openAppStatus==AnalyticsManager.OPEN_APP_UPGRADE){
         	UIHelper.openChangelogPopup(this);
-        	SchedulerManager.getInstance().restartAll(this, 0); // they need to be rescheduled
+        	SchedulerManager.getInstance().restartAll(this); // they need to be rescheduled
         }
         
         // 	toolbar
