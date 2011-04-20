@@ -1,44 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.buzzbox.demo.helloworld"
-      android:versionCode="1"
-      android:versionName="1.0">
-      
-    <uses-sdk android:minSdkVersion="3" />
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BuzzBox SDK 0.6 -->
+<manifest android:versionCode="1" android:versionName="1.0"
+    package="com.buzzbox.demo.helloworld" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="3"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    
     <application android:icon="@drawable/icon" android:label="@string/app_name">
-        <activity android:name=".HelloWorldActivity"
-                  android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".HelloWorldActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
-		<activity android:name="com.buzzbox.mob.android.scheduler.NotificationClickActivity"/>
         <activity android:name="com.buzzbox.mob.android.scheduler.ui.SchedulerPreferenceActivity"/>
         <activity android:name="com.buzzbox.mob.android.scheduler.ui.SchedulerLogActivity"/>
-        <receiver android:name="com.buzzbox.mob.android.scheduler.BootReceiverSchedulerManager">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
-            </intent-filter>
-        </receiver>
-        <receiver android:name="com.buzzbox.mob.android.scheduler.TimeChangeReceiver">
-            <intent-filter>
+        <activity android:name="com.buzzbox.mob.android.scheduler.ui.NotificationHistoryActivity"/>
+        <receiver android:name="com.buzzbox.mob.android.scheduler.SchedulerReceiver">
+        	<intent-filter>
+        		<action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <action android:name="android.intent.action.TIME_SET"/>
                 <action android:name="android.intent.action.DATE_CHANGED"/>
                 <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
             </intent-filter>
         </receiver>
-        <receiver android:name="com.buzzbox.mob.android.scheduler.AlarmReceiver"/>
         <service android:name="com.buzzbox.mob.android.scheduler.ScheduledService"/>
+        <!-- sign up at http://hub.buzzbox.com and get your ApiKey -->
+        <meta-data android:name="Scheduler.Analytics.apiKey" android:value="debug-api-key"/>
         
-        <meta-data android:name="Scheduler.Analytics.apiKey" android:value="debug-api-key"/> <!-- sign up at http://hub.buzzbox.com and get your ApiKey -->
+        <meta-data 
+        	android:name="SchedulerPreferenceActivity.notificationTypes" 
+        	android:value="type 1,type 2" />
         
     </application>
 </manifest>
