@@ -20,16 +20,16 @@
         <activity android:name="com.buzzbox.mob.android.scheduler.ui.NotificationHistoryActivity"/>
         <receiver android:name="com.buzzbox.mob.android.scheduler.SchedulerReceiver">
         	<intent-filter>
+				<action android:name="com.buzzbox.mob.android.scheduler.wakeup"/>
         		<action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <action android:name="android.intent.action.TIME_SET"/>
                 <action android:name="android.intent.action.DATE_CHANGED"/>
                 <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
         <service android:name="com.buzzbox.mob.android.scheduler.ScheduledService"/>
-        <!-- sign up at http://hub.buzzbox.com and get your ApiKey -->
-        <meta-data android:name="Scheduler.Analytics.apiKey" android:value="debug-api-key"/>
-        
+     
         <meta-data 
         	android:name="SchedulerPreferenceActivity.notificationTypes" 
         	android:value="type 1,type 2" />
